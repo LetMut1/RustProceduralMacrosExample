@@ -1,0 +1,15 @@
+[package]
+name = "mem_is_main_derive"
+version = "0.1.0"
+authors = ["zda"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+name = "mem_is_main_derive"
+path = "./src/mod.rs"
+
+[dependencies]
+syn = { version = "1", features = ["full"] }
+quote = { version = "1" }
+proc-macro2 = { version = "1" }
